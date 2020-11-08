@@ -11,7 +11,7 @@ const handler = nc()
   .post((req, res) => {
     const post = { ...req.body, id: Date.now() };
 
-    notes.push(post);
+    posts.push(post);
 
     res.statusCode = 200;
     res.json({ data: post });
